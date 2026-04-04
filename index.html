@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>San Marcos Market</title>
+<style>
+/* Basic Reset */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #1b5e20;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1542838132-92c53300491e') no-repeat center/cover;
+  color: white;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #ff9800;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e68900;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.cards, .specials, .catering-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card, .special, .catering-item {
+  background: white;
+  padding: 25px 20px;
+  width: 260px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover, .special:hover, .catering-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+.testimonial {
+  background: #e8f5e9;
+  padding: 20px;
+  margin: 20px auto;
+  border-left: 5px solid #2e7d32;
+  max-width: 600px;
+  font-style: italic;
+}
+
+.map-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+  .cards, .specials, .catering-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+label {
+  font-weight: bold;
+}
+
+form button {
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>San Marcos Market</h1>
+  <p>Fresh • Local • Family-Owned</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#specials">Specials</a>
+  <a href="#catering">Catering</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  <h2>Your Neighborhood Grocery Store</h2>
+  <p>Fresh produce, quality meats, and friendly service every day.</p>
+  <button onclick="window.location.href='#contact'">Visit Us Today</button>
+</div>
+
+<div class="section" id="about">
+  <h2>About Us</h2>
+  <p>San Marcos Market has been a staple of the community for over 20 years. Founded by a family with a passion for fresh food, we are committed to bringing local, organic, and high-quality products to our neighborhood. Our mission is simple: serve great food, support local farmers, and make our customers feel at home.</p>
+</div>
+
+<div class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Fresh Produce</h3>
+      <p>Hand-picked fruits and vegetables sourced from local farms.</p>
+    </div>
+    <div class="card">
+      <h3>Quality Meats</h3>
+      <p>Premium cuts, sourced from trusted suppliers, for your family meals.</p>
+    </div>
+    <div class="card">
+      <h3>Baked Goods</h3>
+      <p>Freshly baked bread, pastries, and desserts every day.</p>
+    </div>
+    <div class="card">
+      <h3>Convenience Services</h3>
+      <p>ATM, check cashing, MoneyGram, delivery options, and more.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="specials">
+  <h2>Weekly Specials</h2>
+  <div class="specials">
+    <div class="special">
+      <h3>Organic Strawberries</h3>
+      <p>Only $4.99 per lb – fresh from local farms!</p>
+    </div>
+    <div class="special">
+      <h3>Grass-fed Beef</h3>
+      <p>Save 15% this week on premium cuts.</p>
+    </div>
+    <div class="special">
+      <h3>Sourdough Bread</h3>
+      <p>Buy one, get one 50% off – baked daily.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="catering">
+  <h2>Catering Services</h2>
+  <p>Planning a party, event, or gathering? We offer premium meats for all your catering needs.</p>
+  <div class="catering-items">
+    <div class="catering-item">
+      <h3>Carne (Beef)</h3>
+      <p>High-quality cuts perfect for grilling, roasting, or traditional dishes.</p>
+    </div>
+    <div class="catering-item">
+      <h3>Pollo (Chicken)</h3>
+      <p>Fresh, tender chicken ideal for any recipe or event platter.</p>
+    </div>
+    <div class="catering-item">
+      <h3>Cerdo (Pork)</h3>
+      <p>Premium pork cuts for delicious roasts, BBQ, and special meals.</p>
+    </div>
+  </div>
+
+  <h3>Request Catering</h3>
+  <form id="cateringForm" style="max-width:600px;margin:0 auto;text-align:left;">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Your name" required style="width:100%;padding:10px;margin-bottom:10px;"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email" required style="width:100%;padding:10px;margin-bottom:10px;"><br>
+
+    <label for="meats">Select Meats:</label><br>
+    <input type="checkbox" id="carne" name="meats" value="Carne">
+    <label for="carne">Carne (Beef)</label><br>
+    <input type="checkbox" id="pollo" name="meats" value="Pollo">
+    <label for="pollo">Pollo (Chicken)</label><br>
+    <input type="checkbox" id="cerdo" name="meats" value="Cerdo">
+    <label for="cerdo">Cerdo (Pork)</label><br><br>
+
+    <label for="quantity">Quantity (approx.):</label><br>
+    <input type="text" id="quantity" name="quantity" placeholder="e.g., 10 lbs Carne, 5 lbs Pollo" style="width:100%;padding:10px;margin-bottom:10px;"><br>
+
+    <label for="date">Event Date:</label><br>
+    <input type="date" id="date" name="date" required style="width:100%;padding:10px;margin-bottom:10px;"><br>
+
+    <label for="message">Additional Details:</label><br>
+    <textarea id="message" name="message" placeholder="Any special requests or notes" rows="4" style="width:100%;padding:10px;margin-bottom:10px;"></textarea><br>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</div>
+
+<div class="section" id="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="testimonial">
+    "Best all around! Fresh produce and amazing staff." ⭐⭐⭐⭐⭐
+  </div>
+  <div class="testimonial">
+    "Friendly service, freshest produce and meat in town." ⭐⭐⭐⭐⭐
+  </div>
+  <div class="testimonial">
+    "Convenient services and great prices. Highly recommend!" ⭐⭐⭐⭐
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <h2>Visit Us</h2>
+  <p><strong>Address:</strong> 261 Autumn Dr #111, San Marcos, CA</p>
+  <p><strong>Phone:</strong> (760) 798-4056</p>
+  <p><strong>Hours:</strong> Open Daily • Closes at 10 PM</p>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.123456!2d-117.000123!3d33.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc123456789abc%3A0x123456789abcdef!2sSan%20Marcos%20Market!5e0!3m2!1sen!2sus!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 San Marcos Market | Supporting Our Local Community</p>
+</footer>
+
+<script>
+  document.getElementById('cateringForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Thank you! Your catering request has been submitted. We will contact you shortly.');
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
